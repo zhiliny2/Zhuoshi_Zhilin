@@ -8,7 +8,7 @@ import datetime
 import matplotlib.pyplot as plt
 from collections import Counter
 import numpy as np
-# 对wind.xslx预处理，送到get_daily中
+# 对wind.xslx预处理，送到get_daily中 #Wind.xlsx包含A股所有上市公司名称+股票代码
 def get_info(filename):
     df = pd.read_excel('wind.xlsx')
     code_list_raw = list(df.iloc[:, 0])
